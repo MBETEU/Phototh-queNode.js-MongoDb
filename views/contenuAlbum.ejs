@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenu de l'album</title>
+</head>
+<body>
+    <h2>Photothèque</h2>
+
+    <a href="/">Retour</a>
+    <h1><%= album.title %></h1>
+
+    <!-- Formulaire pour télécharger une image -->
+    <form action="/albums/<%= album._id %>/add-image" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <h2>Images de l'album</h2>
+    <ul>
+        <% album.images.forEach(image => { %>
+            <li>
+                <img src="<%= image.url %>" alt="<%= image.name %>" style="max-width: 200px;">
+                <p><strong><%= image.name %></strong></p>
+                <a href="/albums/<%= album._id %>/delete-image/<%= image._id %>">Supprimer</a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

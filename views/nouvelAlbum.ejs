@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photothèque</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Nouvel Album</title>
 </head>
 <body>
-    <h3>Photothèque</h3><br><br>
+    <h1>Photothèque</h1>
 
-    <h1>Nouvel albums</h1><br>
-    <p>Titre</p>
+    <a href="/">Retour</a>
+    <h3>Mes Albums</h3>
+
+    <h1>Nouvel album</h1>
     <form action="/albumAjouter" method="POST">
-        <input type="text" name="title" placeholder="Titre de votre album">
-        <button type="submit">Créer</button>
+        <input type="text" name="title" placeholder="Titre de l'album" required>
+        <button type="submit" class="btn btn-success">Créer</button>
     </form>
-    
 </body>
 </html>

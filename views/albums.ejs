@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Albums</title>
+</head>
+<body>
+    <h1>Photothèque</h1>
+    
+    <h3>Mes Albums</h3>
+    <a href="/add-album" class="btn btn-primary">Nouvel album</a>
+    <ul>
+        <% albums.forEach(album => { %>
+            <li>
+                <a href="/albums/<%= album._id %>"><%= album.title %></a>
+                <form action="/albums/<%= album._id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-danger">Supprimer</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
