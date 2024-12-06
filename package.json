@@ -4,6 +4,7 @@
   "description": "Tp node.js mongo db",
   "main": "index.js",
   "scripts": {
+    "dev": "cls && nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gérard",
