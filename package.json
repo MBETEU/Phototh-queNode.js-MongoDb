@@ -11,10 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "body-passer": "^1.0.0",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "method-override": "^3.0.0",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.4",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.7"
   }
 }
