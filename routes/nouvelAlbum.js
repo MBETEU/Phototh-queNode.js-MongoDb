@@ -7,7 +7,7 @@ router.get('/add-album', (req, res) => {
 });
 
 // Route pour gérer le formulaire d'ajout d'album (POST)
-router.post('/albumAjoute', (req, res) => {
+router.post('/albumAjouter', (req, res) => {
     console.log(req.body); // Affiche les données du formulaire dans la console
     res.redirect('/'); // Redirige vers la page des albums
 });
