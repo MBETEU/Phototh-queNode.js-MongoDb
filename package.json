@@ -1,0 +1,19 @@
+{
+  "name": "tp-node.js-mongodb",
+  "version": "1.0.0",
+  "description": "Tp node.js mongo db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gérard",
+  "license": "ISC",
+  "dependencies": {
+    "body-passer": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.4",
+    "nodemon": "^3.1.7"
+  }
+}
